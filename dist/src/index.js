@@ -41,10 +41,15 @@ const resolvers = {
     Mutation: {
         async createBook(_, { bookInput: { author, title, year } }) {
             const res = await new Book({ author, title, year }).save();
+            return res._id;
         },
         async updateBook(_, { ID, bookInput: { author, title, year } }) {
             await Book.updateOne({ _id: ID }, { $set: { author, title, year } });
-            return ID;
+            return "Book details updated";
+        },
+        async deleteBook(_, { ID }) {
+            await Book.findByIdAndDelete({ _id: ID });
+            return "Book deleted successfully";
         }
     }
 };

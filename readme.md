@@ -24,3 +24,4 @@
 
 --------------------------------------------
 - npm run build //compiles code
+- npm run start 
