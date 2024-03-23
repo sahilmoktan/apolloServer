@@ -13,7 +13,14 @@
     "start": "node ./dis/src/index.js"
   }
 
-
+--------------------------------------------
 - create bookModel
 - imp apollo server, mongo connect in index.ts
-- define typeDefs
+- define typeDefs Query
+- define resolvers for Query
+- connect MONGODB
+- SERVER IN APOLLO, PORT LISTEN
+
+
+--------------------------------------------
+- npm run build //compiles code

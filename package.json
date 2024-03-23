@@ -7,7 +7,7 @@
   "scripts": {
     "compile": "tsc",
     "build": "npm run compile",
-    "start": "node ./dis/src/index.js"
+    "start": "node ./dist/src/index.js"
   },
   "author": "",
   "license": "ISC",
